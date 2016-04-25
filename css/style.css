@@ -70,12 +70,12 @@ ul, ol {
 }
 /* Navigation */
 #menu {
-	padding: 20px;
+	padding: 40px;
 	transition: all 0.8s;
 }
 #menu.navbar-default {
 	background-color: rgba(248, 248, 248, 0);
-	border-color: rgba(231, 231, 231, 0);
+	border-color: rgba(248, 248, 248, 0);
 }
 #menu a.navbar-brand {
 	text-transform: uppercase;
@@ -102,14 +102,14 @@ ul, ol {
 }
 .on {
 	background-color: #444 !important;
-	padding: 0 !important;
+	padding: 10 !important;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 	color: #fff !important;
 	background-color: transparent;
 }
 .navbar-toggle {
-	border-radius: 0;
+	border-radius: 10;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
 	background-color: #f38181;
