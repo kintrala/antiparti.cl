@@ -345,16 +345,17 @@
     </div>
     <div class="col-md-8 wow fadeInDown" data-wow-delay="200ms">
       <h3>Leave a message</h3>
-      <form action="https://formspree.io/kintrala@me.com" method="POST">        <div class="row">
+      <form action="https://formspree.io/kintrala@me.com" method="POST" id="contactForm" novalidate>
+        <div class="row">
           <div class="col-md-6">
             <div class="form-group">
-              <input type="text" name="name" class="form-control" placeholder="Name" required="required">
+              <input type="text" name="name" id="name" class="form-control" placeholder="Name" required="required">
               <p class="help-block text-danger"></p>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <input type="email" name="_replyto" class="form-control" placeholder="Email" required="required">
+              <input type="email" name="_replyto" id="email" class="form-control" placeholder="Email" required="required">
               <p class="help-block text-danger"></p>
             </div>
           </div>
@@ -364,7 +365,7 @@
           <p class="help-block text-danger"></p>
         </div>
         <div id="success"></div>
-        <input type="submit" value="Send">
+        <button type="submit" value="Send" class="btn btn-default">Send</button>
       </form>
     </div>
   </div>
