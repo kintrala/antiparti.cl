@@ -252,7 +252,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 #services-section .service:hover > i.fa {
 	color: #555;
 }
-/* Gallery Section 
+/* Gallery Section
 ==============================*/
 #works-section {
 	padding: 100px 0 0 0;
@@ -313,7 +313,7 @@ ol.type li a:hover {
 	transition-property: transform, opacity;
 }
 .portfolio-item {
-	margin-bottom: 30px;
+	margin-bottom: 90px;
 }
 .portfolio-item .hover-bg {
 	max-height: 300px;
@@ -478,7 +478,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	background-size: cover;
 	background-attachment: fixed;
 	background-size: 2000px;
-	
+
 }
 #testimonials-section i.fa {
 	color: #000000;
