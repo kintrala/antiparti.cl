@@ -8,4 +8,4 @@ This is a repository for my Professional Portfolio and Curriculum Vitae.
 - Performance Installation
 - Painting ( Studio, Live, Adventure )
 
-#FineArts
+#FineArt
