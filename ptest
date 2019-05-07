@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 <!--
 ██████╗     █████╗     ████████╗     █████╗     ██╗         ██╗    ███╗   ██╗     █████╗
@@ -30,6 +30,7 @@
 ╚══════╝ ╚═════╝  ╚═╝ ╚════╝
 -->
 <head>
+
 <link rel="icon"
       type="image/png"
       href="http://antiparti.cl/icon.png">
@@ -38,17 +39,21 @@
 <title>antiparti.cl</title>
 <meta name="description" content="Fine Art">
 <meta name="author" content="Catalina Vallejos">
-<meta name="comment" content="is W A Y shape"
-<html>
+
+
 <head>
     <title>antiparti.cl is W A Y shape</title>
     <base target="_blank">
 </head>
 
-
 <style type="text/css" scoped>
 
 html,
+
+body {
+height: 100%;
+width: 100%;
+}
 
 h1 {
     display: block;
@@ -68,16 +73,16 @@ background-size: 100% 100%;
 }
 
 table.GeneratedTable {
-width:65%;
+width:60%;
 background-color:#transparent;
-border-collapse:collapse;border-width:0px;
+border-collapse:collapse;border-width:1px;
 border-color:#ffffff;
 border-style:inset;
 color:#000000;
 }
 
 table.GeneratedTable td, table.GeneratedTable th {
-border-width:0px;
+border-width:3px;
 border-color:#000000;
 border-style:inset;
 padding:20px;
@@ -87,77 +92,59 @@ padding:20px;
 table.GeneratedTable thead {
 background-color:transparent;
 }
-
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 65%;
-  background-color: transparent;
-  color: transparent;
-  text-align: center;
-}
-
 </style>
 
 <!-- HTML Code -->
+<body>
+
 <header align="center">
 <a href="http://antiparti.cl"><img src="img/header.png" width="90%"></img></a>
 </header>
 
-<body>
-
-<br>
+<br></br><br></br><br></br>
 
 <div align="center">
-    <img src="img/shape.png"></img>
+  <img src="img/shape.png" width="65%"></img>
 </div>
 
-<br>
-
-<div align="center">
+<div>
   <table class="GeneratedTable">
     <thead>
       <tr>
         <th align="center">
-          <a href="http://antiparti.cl/portafolios.html">
-            <h2>Portafolios
-            <br>ポートフォリオ
+          <h2>ばじえほすかたぃな
+            <br>Vallejos Catalina
+            <br>時間ベースのアーティスト
+            <br>Time-Based Artist
+            <br>グローバルアートプラクティス
+            <br>MFA Global Art Practice
           </h2>
-          </a>
         </th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td align="center">
-          <a href="http://antiparti.cl/CV.html">
-            <h2>Curriculum Vitae
-              <br>履歴書
-            </h2>
-          </a>
+
         </td>
       <tr>
         <td align="center">
-          <a href="mailto:kintrala@me.com">
-            <h2>Contact
-              <br>連絡方法
-            </h2>
-          </a>
+
+        </td>
+      <tr>
+        <td align="center">
+
+        </td>
+      <tr>
+        <td align="center">
+
+        </td>
+      <tr>
+        <td align="center">
+
         </td>
       </tr>
-    </tbody>
-  </table>
-</div>
 
-<br></br>
-
-<div class="footer" align="center">
-  <img src="img/geidai.png"></img>
-  <img src="img/wayshape.png"></img>
-  <img src="img/gap.png"></img>
-</div>
-
+    </div>
 </body>
-
 </html>
