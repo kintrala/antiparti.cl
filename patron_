@@ -50,6 +50,10 @@
   gtag('config', 'UA-139734724-1');
 </script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+<script src="index.js"></script>
+
 </head>
 
 
@@ -105,6 +109,34 @@ padding:20px;
 table.GeneratedTable thead {
 background-color:transparent;
 }
+
+nav{
+  background: #000000;
+  color: #ffffff
+  list-style: none;
+  clear: both;
+}
+
+nav li{
+  display: inline-block;
+  margin: 10px;
+}
+
+body{
+  margin: 0;
+}
+.burger div{
+  width: 35px;
+  height: 5px;
+  background: #ffffff;
+  margin: 6px 0;
+}
+#burger{
+  float: right;
+  visibility: hidden;
+  margin: 5px;
+}
+
 </style>
 
 <body>
