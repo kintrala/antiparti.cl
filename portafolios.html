@@ -1,33 +1,35 @@
-<!DOCTYPE HTML>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en, ja">
 <!--
-|██████╗     █████╗     ████████╗     █████╗     ██╗         ██╗    ███╗   ██╗     █████╗
-██╔════╝    ██╔══██╗    ╚══██╔══╝    ██╔══██╗    ██║         ██║    ████╗  ██║    ██╔══██╗
-██║         ███████║       ██║       ███████║    ██║         ██║    ██╔██╗ ██║    ███████║
-██║         ██╔══██║       ██║       ██╔══██║    ██║         ██║    ██║╚██╗██║    ██╔══██║
-╚██████╗    ██║  ██║       ██║       ██║  ██║    ███████╗    ██║    ██║ ╚████║    ██║  ██║
-╚═════╝    ╚═╝  ╚═╝       ╚═╝       ╚═╝  ╚═╝    ╚══════╝    ╚═╝    ╚═╝  ╚═══╝    ╚═╝  ╚═╝
 
-██╗███████╗    ██╗    ██╗     █████╗     ██╗   ██╗    ███████╗██╗  ██╗ █████╗ ██████╗ ███████╗
-██║██╔════╝    ██║    ██║    ██╔══██╗    ╚██╗ ██╔╝    ██╔════╝██║  ██║██╔══██╗██╔══██╗██╔════╝
-██║███████╗    ██║ █╗ ██║    ███████║     ╚████╔╝     ███████╗███████║███████║██████╔╝█████╗
-██║╚════██║    ██║███╗██║    ██╔══██║      ╚██╔╝      ╚════██║██╔══██║██╔══██║██╔═══╝ ██╔══╝
-██║███████║    ╚███╔███╔╝    ██║  ██║       ██║       ███████║██║  ██║██║  ██║██║     ███████╗
-╚═╝╚══════╝     ╚══╝╚══╝     ╚═╝  ╚═╝       ╚═╝       ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚══════╝
-
-|█████╗ ███╗   ██╗████████╗██╗██████╗  █████╗ ██████╗ ████████╗██╗    ██████╗██╗
-██╔══██╗████╗  ██║╚══██╔══╝██║██╔══██╗██╔══██╗██╔══██╗╚══██╔══╝██║   ██╔════╝██║
-███████║██╔██╗ ██║   ██║   ██║██████╔╝███████║██████╔╝   ██║   ██║   ██║     ██║
-██╔══██║██║╚██╗██║   ██║   ██║██╔═══╝ ██╔══██║██╔══██╗   ██║   ██║   ██║     ██║
+ █████╗ ███╗   ██╗████████╗██╗██████╗  █████╗ ██████╗ ████████╗██╗    ██████╗██╗     
+██╔══██╗████╗  ██║╚══██╔══╝██║██╔══██╗██╔══██╗██╔══██╗╚══██╔══╝██║   ██╔════╝██║     
+███████║██╔██╗ ██║   ██║   ██║██████╔╝███████║██████╔╝   ██║   ██║   ██║     ██║     
+██╔══██║██║╚██╗██║   ██║   ██║██╔═══╝ ██╔══██║██╔══██╗   ██║   ██║   ██║     ██║     
 ██║  ██║██║ ╚████║   ██║   ██║██║     ██║  ██║██║  ██║   ██║   ██║██╗╚██████╗███████╗
 ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝╚═╝ ╚═════╝╚══════╝
 
-██████╗  ██████╗  ██╗ █████╗
-╚════██╗██╔═████╗███║██╔══██╗
-|█████╔╝██║██╔██║╚██║╚██████║
-██╔═══╝ ████╔╝██║ ██║ ╚═══██║
-███████╗╚██████╔╝ ██║ █████╔╝
-╚══════╝ ╚═════╝  ╚═╝ ╚════╝
+██╗  ██╗██╗███╗   ██╗████████╗██████╗  █████╗ ██╗      █████╗ 
+██║ ██╔╝██║████╗  ██║╚══██╔══╝██╔══██╗██╔══██╗██║     ██╔══██╗
+█████╔╝ ██║██╔██╗ ██║   ██║   ██████╔╝███████║██║     ███████║
+██╔═██╗ ██║██║╚██╗██║   ██║   ██╔══██╗██╔══██║██║     ██╔══██║
+██║  ██╗██║██║ ╚████║   ██║   ██║  ██║██║  ██║███████╗██║  ██║
+╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
+
+██╗███████╗    ██╗    ██╗     █████╗     ██╗   ██╗    ███████╗██╗  ██╗ █████╗ ██████╗ ███████╗
+██║██╔════╝    ██║    ██║    ██╔══██╗    ╚██╗ ██╔╝    ██╔════╝██║  ██║██╔══██╗██╔══██╗██╔════╝
+██║███████╗    ██║ █╗ ██║    ███████║     ╚████╔╝     ███████╗███████║███████║██████╔╝█████╗  
+██║╚════██║    ██║███╗██║    ██╔══██║      ╚██╔╝      ╚════██║██╔══██║██╔══██║██╔═══╝ ██╔══╝  
+██║███████║    ╚███╔███╔╝    ██║  ██║       ██║       ███████║██║  ██║██║  ██║██║     ███████╗
+╚═╝╚══════╝     ╚══╝╚══╝     ╚═╝  ╚═╝       ╚═╝       ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚══════╝
+                                                                                              
+  █████╗ ██████╗ ████████╗           ██████╗  ██████╗  ██████╗  ██████╗                 ██████╗  ██████╗ ██████╗ ██████╗ 
+ ██╔══██╗██╔══██╗╚══██╔══╝    ██╗    ╚════██╗██╔═████╗██╔═████╗██╔═████╗                ╚════██╗██╔═████╗╚════██╗╚════██╗
+ ███████║██████╔╝   ██║       ╚═╝     █████╔╝██║██╔██║██║██╔██║██║██╔██║                 █████╔╝██║██╔██║ █████╔╝ █████╔╝
+ ██╔══██║██╔══██╗   ██║       ██╗    ██╔═══╝ ████╔╝██║████╔╝██║████╔╝██║                ██╔═══╝ ████╔╝██║██╔═══╝  ╚═══██╗
+ ██║  ██║██║  ██║   ██║       ╚═╝    ███████╗╚██████╔╝╚██████╔╝╚██████╔╝    ███████╗    ███████╗╚██████╔╝███████╗██████╔╝
+ ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝              ╚══════╝ ╚═════╝  ╚═════╝  ╚═════╝     ╚══════╝    ╚══════╝ ╚═════╝ ╚══════╝╚═════╝ 
+
 -->
 <head>
 
@@ -36,12 +38,18 @@
       href="http://antiparti.cl/icon.png">
 
 <meta charset="utf-8">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa&effect=anaglyph|fire-animation">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hachi+Maru+Pop&effect=anaglyph|fire-animation">
+  </link>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Fine Art">
 <meta name="author" content="Catalina Vallejos">
+<meta name="comment" content="is W A Y shape">
 </meta>
 
-<title>antiparti.cl is W A Y shape</title>
+<title>&#9961; &#127752 antiparti.cl &#127912; &#9961;</title>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139734724-1"></script>
 <script>
@@ -52,39 +60,33 @@
   gtag('config', 'UA-139734724-1');
 </script>
 
-</head>
-
 <style type="text/css" scoped>
 
 html,
 
 body {
 height: 100%;
-width: 100%;
+ font-family: 'Comfortaa', 'Hachi Maru Pop';
+ font: anaglyph fire-animation 'Comfortaa', 'Hachi Maru Pop', sans-serif;
+        font-size: 12px;
+
 }
 
 h1 {
     display: block;
-    font-size: 80px;
-    color: #000000;
+    font-size: 35px;
+    color: #f5f5f5;
     }
-
 h2 {
     display: block;
-    font-size: 45px;
-    color: #000000;
-    }
-
-h3 {
-  display: block;
-  font-size: 35px;
-  color: #000000
+    font-size: 25px;
+    color: #f5f5f5;
     }
 
 h4 {
-  display: block;
-  font-size:10px;
-  color: #000000
+      display: block;
+      font-size:15px;
+      color: #f5f5f5
     }
 
 body {
@@ -94,90 +96,108 @@ background-size: 100% 100%;
 }
 
 table.GeneratedTable {
-width:60%;
-background-color:#transparent;
-border-collapse:collapse;border-width:5px;
-border-color:#000000;
+width:70%;
+background-image: url(img/table-background.png);
+border-collapse:collapse;border-width:10px;
+border-color:#f5f5f5;
 border-style:inset;
 color:#000000;
 }
 
-table.GeneratedTable td, table.GeneratedTable th {
-border-width:5px;
-border-color:#000000;
-border-style:inset;
-padding:25px;
+            table.GeneratedTable td, table.GeneratedTable th {
+            border-width:10px;
+            border-color:#000000;
+            border-style:inset;
+            padding:15px;
 
-}
+            }
 
-table.GeneratedTable thead {
-background-color: transparent;
+            table.GeneratedTable thead {
+           background-image: url(img/table-background.png);
+
+            }
+
+footer {
+  position: bottom;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  color: transparent;
+  text-align: center;
 }
 
 </style>
 
-<body>
+</head>
 
+<!-- HTML -->
+
+<body>
+       <br>     
 <header align="center">
-  <a href="http://antiparti.cl"><img src="img/header.png" width="100%"></img></a>
+             <a href="http://antiparti.cl">
+                        <img src="img/hheader.png" width="96%">
+                        </img>
+            </a>
 </header>
 
-<br></br>
-
-<div align="center">
-  <p align="center">
-    <h2>ばじえほすかたぃな
-      <br>Vallejos Catalina
-      <br>時間ベースのアーティスト
+<br>
+<div style="display: flex; justify-content: center;">
+            <div style="flex: 1;">
+                        <img src="img/shape.png" width="100%"></img>
+            </div>
+ <div style="flex: 1;">
+  <p>
+    <h2 align="center" class="font-effect-anaglyph font-effect-fire-animation">
+      <br>Catalina
+     <br>時間ベースのアーティスト
       <br>Time-Based Artist
       <br>グローバルアートプラクティス
       <br>MFA Global Art Practice
     </h2>
   </p>
 </div>
+</div>
 
 <br></br>
 
-<div align="center">
+<div align="center" class="font-effect-anaglyph">
   <table class="GeneratedTable">
     <thead>
       <tr>
-        <td align="center">
-          <p>
+        <th align="center">
+          <a href="http://antiparti.cl/portafolios.html">
             <h2>
-              <font color="white">ポートフォリオ<br>P O R T A F O L I O S</font>
+              <font color="white">&#128211; ポートフォリオ<br></br>P O R T A F O L I O S</font>
             </h2>
-          </p>
-        </td>
+          </a>
+        </th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td align="center">
-          <a href="/pintura.html"><h3><b>絵 P I N T U R A</b></h3></a>
+          <a href="mailto:kintrala@me.com">
+            <h2>&#128232; 連絡方法
+              <br>C O N T A C T
+            </h2>
+          </a>
         </td>
-      </tr>
       <tr>
         <td align="center">
-          <a href="/sonido.html"><h3><b>音 S O N I D O</b></h3></a>
+          <a href="http://antiparti.cl/CV.html">
+            <h2>&#128209; 履歴書
+              <br>A B O U T
+            </h2>
+          </a>
         </td>
       </tr>
-      <tr>
-        <td align="center">
-          <a href="/tiempo.html"><h3><b>時間 T I E M P O</b></h3></a>
-        </td>
-      </tr>
-      <tr>
-        <td align="center">
-          <a href="http://medium.com/@icecreamwithyou"><h3><b>言葉 P A L A B R A S</b></h3></a>
-        </td>
-      </tr>
-      <tr>
-        <td align="center">
-          <a href="http://meschansummer.com"><h3><b>購入 C O M P R A S</b></h3></a>
-        </td>
-      </tr>
+    </tbody>
+  </table>
 </div>
+
+<br><br><br>
 
 <div class="footer" align="center">
   <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
@@ -185,14 +205,13 @@ background-color: transparent;
     </img>
   </a>
   <br>
-  <h4>Esta obra está bajo una
+  <p>Esta obra está bajo una
     <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
       Licencia Creative Commons Atribución-NoComercial-SinDerivadas 4.0 Internacional
     </a>.
-  </h4>
-</p>
+  </p>
 </div>
 
 </body>
 
-</html>
+ </html>                                                                                 
