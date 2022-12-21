@@ -136,7 +136,7 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #333;
+    background-color: transparent;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -147,11 +147,11 @@ footer {
   /* Style the menu */
   .menu {
     position: fixed;
-    bottom: 60px;
+    bottom: 100px;
     right: 20px;
-    background-color: #fff;
+    background-color: #000;
     color: #333;
-    border: 1px solid #ccc;
+    border: 0px;
     display: none;
   }
 
@@ -160,12 +160,13 @@ footer {
     display: block;
     padding: 10px 20px;
     text-decoration: none;
-    color: #333;
+    color: #fff;
   }
 
   /* Style the submenu */
   .submenu {
     display: none;
+    padding: 15px;
   }
 
 </style>
@@ -179,16 +180,16 @@ footer {
 <body>
 
 
-<img class="menu-button" src="/img/wayshapeheart.gif" onclick="toggleMenu()">
+<img class="menu-button" src="img/wayshapeheart.gif" height="70px" onclick="toggleMenu()">
 
 <div class="menu">
   <a href="#">About</a>
   <a href="#" onclick="toggleSubmenu(this)">Portafolios</a>
   <div class="submenu">
-    <a href="/tiempo.html">Tiempo</a>
-    <a href="/pintura.html">Pintura</a>
-    <a href="/palabra.html">Palabra</a>
-    <a href="/sonido.html">Sonido</a>
+    <a href="tiempo.html">Tiempo</a>
+    <a href="pintura.html">Pintura</a>
+    <a href="palabra.html">Palabra</a>
+    <a href="sonido.html">Sonido</a>
   </div>
   <a href="#">Home</a>
 </div>
