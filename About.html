@@ -126,6 +126,38 @@ footer {
   color: transparent;
   text-align: center;
 }
+.menu-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .menu {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    background-color: #000;
+    color: #333;
+    border: 0px;
+    display: none;
+  }
+
+  .menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .submenu {
+    display: none;
+    padding: 15px;
+  }
 
 </style>
 
@@ -134,15 +166,44 @@ footer {
 <!-- HTML -->
 
 <body>
+
+<img class="menu-button" src="img/wayshapeheart.gif" height="70px" onclick="toggleMenu()">
+
+<div class="menu">
+  <a href="#">About</a>
+  <a href="#" onclick="toggleSubmenu(this)">Portafolios</a>
+  <div class="submenu">
+    <a href="tiempo.html">Tiempo</a>
+    <a href="pintura.html">Pintura</a>
+    <a href="palabra.html">Palabra</a>
+    <a href="sonido.html">Sonido</a>
+  </div>
+  <a href="index.html">Home</a>
+</div>
+
+<script>
+  function toggleMenu() {
+    var menu = document.querySelector(".menu");
+    menu.style.display = (menu.style.display == "block") ? "none" : "block";
+  }
+
+  function toggleSubmenu(link) {
+    var submenu = link.nextElementSibling;
+    submenu.style.display = (submenu.style.display == "block") ? "none" : "block";
+  }
+</script>
+
        <br>     
 <header align="center">
              <a href="http://antiparti.cl">
-                        <img src="img/hheader.png" width="96%">
-                        </img>
+                  <img src="img/hheader.png" width="96%">
+                  </img>
             </a>
 </header>
 
 <br>
+ 
+</br>
 <div style="display: flex; justify-content: center;">
             <div style="flex: 1;">
                         <img src="img/shape.png" width="100%"></img>
@@ -167,7 +228,7 @@ footer {
     <thead>
       <tr>
         <th align="center">
-          <a href="/Index.html">
+          <a href="/index.html">
             <h2 class="font-effect-anaglyph font-effect-fire-animation">
             About Me
           </h2>
