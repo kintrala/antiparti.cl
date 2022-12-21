@@ -61,8 +61,13 @@
 </script>
 
 <style type="text/css" scoped>
+ 
+
+
 
 html,
+
+
 
 body {
 height: 100%;
@@ -127,13 +132,79 @@ footer {
   text-align: center;
 }
 
+.menu-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+
+  /* Style the menu */
+  .menu {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    display: none;
+  }
+
+  /* Style the menu items */
+  .menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+  }
+
+  /* Style the submenu */
+  .submenu {
+    display: none;
+  }
+
 </style>
 
 </head>
 
 <!-- HTML -->
 
+
+
 <body>
+
+
+<img class="menu-button" src="path/to/image.png" onclick="toggleMenu()">
+
+<div class="menu">
+  <a href="#">Option 1</a>
+  <a href="#" onclick="toggleSubmenu(this)">Option 2</a>
+  <div class="submenu">
+    <a href="#">Suboption 1</a>
+    <a href="#">Suboption 2</a>
+  </div>
+  <a href="#">Option 3</a>
+</div>
+
+<script>
+  function toggleMenu() {
+    var menu = document.querySelector(".menu");
+    menu.style.display = (menu.style.display == "block") ? "none" : "block";
+  }
+
+  function toggleSubmenu(link) {
+    var submenu = link.nextElementSibling;
+    submenu.style.display = (submenu.style.display == "block") ? "none" : "block";
+  }
+</script>
+
+
+ 
        <br>     
 <header align="center">
              <a href="http://antiparti.cl">
