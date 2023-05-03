@@ -222,17 +222,33 @@ footer {
 <br></br>
 <br></br>
 
-<h1 align="center" class="font-effect-anaglyph font-effect-fire-animation">MESCHAN SUMMER</h1>
+<h1 align="center" class="font-effect-anaglyph font-effect-fire-animation"> _TITLE_ </h1>
 
-  <h2 align="center" class="font-effect-anaglyph"> MESCHAN SUMMER 2007<br>
-    Initially launched under this name, it was birthed onto the DIY scene in April of 2007 at the Saturation Fest 
-    happening in Riverside, California during the Memorial Day weekend.
+<div align="center">
+ <br></br>
+ <h2 align="center" class="font-effect-anaglyph"> _SUBTITLE_ <br>
+    
     <br></br>
   </h2>
-<img src="img/MESCHANSUMMER/MESCHANSUMMER2007-face.jpg" width="95%"></img>
+  
+  <img src="img/" width="95%"></img>
   <br></br>
-  <img src="img/MESCHANSUMMER/MESCHANSUMMER2007-display.jpg" width="95%"></img>
+  <img src="" width="95%"></img>
   <br></br>
+  <img src="" width="95%"></img>
+  <br></br>
+  <img src="" width="95%"></img>
+  <br>
+  </br>
+
+  <video width="90%" controls="controls">
+    <source src="" type="video/mp4">
+    sorry can't load
+  </video>
+</div>
+
+
+
 <br></br>
 <br></br>
 
