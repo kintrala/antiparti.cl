@@ -97,7 +97,11 @@ END Glitch hello-app default styles
 
 body {
   font-family: Stick;
+<<<<<<< HEAD
+  background-image: url("https://cdn.glitch.me/19179d05-053f-438b-98d8-05a32e66c1e5/sbs.gif");
+=======
   background-image: url("https://cdn.glitch.me/19179d05-053f-438b-98d8-05a32e66c1e5/sbs.gif?v=1700229527946");
+>>>>>>> parent of c03bed3 (sbs)
   background-size: cover;
     height: 100vh;
     padding:0;
@@ -164,9 +168,22 @@ h2 {
   color: #2800FF;
 }
 
+<<<<<<< HEAD
+
+/* Style for the overlay */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+=======
 /* Interactive image */
 .illustration:active {
   transform: translateY(5px);
+>>>>>>> parent of c03bed3 (sbs)
 }
 
 /* Button dip
@@ -187,3 +204,13 @@ h2 {
 .fileopener:hover {
   border-bottom:3px solid var(--color-secondary);
 }
+<<<<<<< HEAD
+
+/* Style for the iframe */
+iframe {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 9; /* Set the aspect ratio (16:9 in this example) */
+}
+=======
+>>>>>>> parent of c03bed3 (sbs)
