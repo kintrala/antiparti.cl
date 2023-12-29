@@ -153,4 +153,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }, migrationInterval / 100);
   }
 
- 
+  document.addEventListener("click", function (event) {
+    if (event.target === popup) {
+      popup.style.display = "none";
+    }
+  });
+
+  // Generate initial GIFs
+  for (var i = 0; i < gifs.length; i++) {
+    createRandomGif(gifs[i]);
+  }
+});
