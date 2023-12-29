@@ -1,18 +1,11 @@
 @font-face {
-  font-family: Stick;
-  src: url("https://fonts.googleapis.com/css2?family=Stick&display=swap")
-    format("opentype");
-}
-@font-face {
-  font-family: Stick;
-  font-weight: bold;
-  src: url("https://fonts.googleapis.com/css2?family=Stick&display=swap")
-    format("opentype");
+  font-family: "Stick";
+  src: url("https://fonts.googleapis.com/css2?family=Stick&display=swap") format("opentype");
 }
 
 :root {
   --color-bg: #69f7be;
-  --color-text-main: ##f0fff0;
+  --color-text-main: #f0fff0; /* Fix the double ## */
   --color-primary: #f0fff0;
   --wrapper-height: 87vh;
   --image-max-width: 300px;
@@ -21,15 +14,13 @@
   --font-family-header: "Stick";
 }
 
-
 body {
   margin: 0;
   background-image: url("https://cdn.glitch.me/19179d05-053f-438b-98d8-05a32e66c1e5/sbs.gif");
   background-size: cover;
   background-position: center;
-  font-family: Stick;
+  font-family: "Stick"; /* Use the correct font-family name */
 }
-
 
 #popup {
   display: none;
@@ -51,8 +42,5 @@ body {
 #iframe {
   width: 80%;
   height: 80%;
-  border: none;
+  border: outset;
 }
-
-
-
