@@ -53,12 +53,12 @@ document.addEventListener("DOMContentLoaded", function () {
       contentUrl: "https://archive.org/embed/SIRENA-Madena_by_Magdi_Mostafa",
     },
     {
-      url: "https://antiparti.cl/img/Sirena/spiny puppy.gif",
+      url: "https://antiparti.cl/img/Sirena/spiny-puppy.gif",
       contentUrl:
         "https://archive.org/embed/SIRENA-Lifelike_by_Ioana_and_Pablo",
     },
     {
-      url: "/home/kairosu/Documents/GitHub/antiparti.cl/img/Sirena/crusty.gif",
+      url: "https://antiparti.cl/img/Sirena/crusty.gif",
       contentUrl: "https://archive.org/embed/SIRENA-METANOIA_by_Nina_Sumarac",
     },
     {
