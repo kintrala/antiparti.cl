@@ -76,6 +76,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const gridCellHeight = 100 / gridSize;
   const migrationInterval = 5000; // Adjust this value to control the migration interval (in milliseconds)
 
+  let currentGif = null;
+
   function createRandomGif(gifData) {
     const gif = document.createElement("img");
     gif.src = gifData.url;
@@ -93,9 +95,20 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function openPopup(contentUrl) {
+    if (currentGif) {
+        currentGif.pause();
+    }
+
     iframe.src = contentUrl;
     popup.style.display = "flex";
-  }
+
+    currentGif = iframe.contentWindow;
+
+    // Allow new content to be opened after clicking a different gif
+    setTimeout(() => {
+        currentGif = null;
+    }, 1000);
+} 
 
   function setRandomGridPosition(gif) {
     const xIndex = Math.floor(Math.random() * gridSize);
