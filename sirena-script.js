@@ -72,9 +72,9 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   var spawnedGifs = [];
-  var gridSize = 7; // Adjust this value to control the grid size
-  var gridCellWidth = 80 / gridSize;
-  var gridCellHeight = 80 / gridSize;
+  var gridSize = 5; // Adjust this value to control the grid size
+  var gridCellWidth = 100 / gridSize;
+  var gridCellHeight = 100 / gridSize;
   var migrationInterval = 5000; // Adjust this value to control the migration interval (in milliseconds)
 
   function createRandomGif(gifData) {
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
     spawnedGifs.push({ gif: gif, data: gifData });
 
     // Set initial position and update at regular intervals
-    updateGifPosition(gif, gifData);
+    updateGifPosition(gif);
   }
 
   function openPopup(contentUrl) {
@@ -114,10 +114,12 @@ document.addEventListener("DOMContentLoaded", function () {
     gif.style.top = yPosition + "%";
   }
 
-  function updateGifPosition(gif, gifData) {
+  function updateGifPosition(gifObj) {
+    var gif = gifObj.gif;
+
     // Update position at regular intervals
     setInterval(function () {
-      if (gifs.includes(gifData)) {
+      
         // Calculate new position within the grid
         var newXIndex = Math.floor(Math.random() * gridSize);
         var newYIndex = Math.floor(Math.random() * gridSize);
@@ -135,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var currentY = parseFloat(gif.style.top);
 
     var deltaX = (newX - currentX) / 100; // Adjust the migration speed
-    var deltaY = (newY - currentY) / 100;
+    var deltaY = (newY - currentY) / 90;
 
     var step = 0;
     var migrationStep = setInterval(function () {

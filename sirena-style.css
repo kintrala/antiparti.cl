@@ -1,24 +1,3 @@
-:root {
-  --color-bg: #69f7be;
-  --color-text-main: ##f0fff0;
-  --color-primary: #f0fff0;
-  --wrapper-height: 87vh;
-  --image-max-width: 300px;
-  --image-margin: 3rem;
-  --font-family: "Stick";
-  --font-family-header: "Stick";
-}
-
-/* Basic page style resets */
-* {
-  box-sizing: border-box;
-}
-[hidden] {
-  display: none !important;
-}
-
-/* Import fonts */
-
 @font-face {
   font-family: Stick;
   src: url("https://fonts.googleapis.com/css2?family=Stick&display=swap")
@@ -31,12 +10,24 @@
     format("opentype");
 }
 
+:root {
+  --color-bg: #69f7be;
+  --color-text-main: ##f0fff0;
+  --color-primary: #f0fff0;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "Stick";
+  --font-family-header: "Stick";
+}
+
+
 body {
   margin: 0;
-  font-family: Stick;
   background-image: url("https://cdn.glitch.me/19179d05-053f-438b-98d8-05a32e66c1e5/sbs.gif");
   background-size: cover;
   background-position: center;
+  font-family: Stick;
 }
 
 
