@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
     gifContainer.appendChild(gif);
 
     // Set initial position and update at regular intervals
-    updateGifPosition(gif, gifData);
+    updateGifPosition(gif);
   }
 
   function openPopup(contentUrl) {
@@ -108,10 +108,10 @@ document.addEventListener("DOMContentLoaded", function () {
     gif.style.top = `${yPosition}%`;
   }
 
-  function updateGifPosition(gif, gifData) {
+  function updateGifPosition(gif) {
     // Update position at regular intervals
     setInterval(() => {
-      if (!gifData.spawned) {
+    
         // Calculate new position within the grid
         const newXIndex = Math.floor(Math.random() * gridSize);
         const newYIndex = Math.floor(Math.random() * gridSize);
@@ -121,17 +121,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Animate the migration
         animateMigration(gif, newXPosition, newYPosition);
-        gifData.spawned = true;
-      }
+      
     }, migrationInterval);
   }
+  
 
   function animateMigration(gif, newX, newY) {
     const currentX = parseFloat(gif.style.left);
     const currentY = parseFloat(gif.style.top);
 
     const deltaX = (newX - currentX) / 100; // Adjust the migration speed
-    const deltaY = (newY - currentY) / 100;
+    const deltaY = (newY - currentY) / 90;
 
     let step = 0;
     const migrationStep = setInterval(() => {
