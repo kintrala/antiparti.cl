@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var gifContainer = document.getElementById("gifContainer");
-  var popup = document.getElementById("popup");
-  var iframe = document.getElementById("iframe");
+  const gifContainer = document.getElementById("gifContainer");
+  const popup = document.getElementById("popup");
+  const iframe = document.getElementById("iframe");
 
-  var gifs = [
+  const gifs = [
     {
       url: "https://antiparti.cl/img/Sirena/baby-octo0.gif",
       contentUrl:
@@ -71,31 +71,25 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   ];
 
-  var spawnedGifs = [];
-  var gridSize = 5; // Adjust this value to control the grid size
-  var gridCellWidth = 100 / gridSize;
-  var gridCellHeight = 100 / gridSize;
-  var migrationInterval = 5000; // Adjust this value to control the migration interval (in milliseconds)
+  const gridSize = 5; // Adjust this value to control the grid size
+  const gridCellWidth = 100 / gridSize;
+  const gridCellHeight = 100 / gridSize;
+  const migrationInterval = 5000; // Adjust this value to control the migration interval (in milliseconds)
 
   function createRandomGif(gifData) {
-    var gif = document.createElement("img");
+    const gif = document.createElement("img");
     gif.src = gifData.url;
     gif.className = "gif";
     gif.style.position = "absolute";
-    gif.addEventListener("click", function () {
-      openPopup(gifData.contentUrl);
-    });
+    gif.addEventListener("click", () => openPopup(gifData.contentUrl));
 
     // Set initial random position within the grid
     setRandomGridPosition(gif);
 
     gifContainer.appendChild(gif);
 
-    // Add the spawned gif to the list
-    spawnedGifs.push({ gif: gif, data: gifData });
-
     // Set initial position and update at regular intervals
-    updateGifPosition(gif);
+    updateGifPosition(gif, gifData);
   }
 
   function openPopup(contentUrl) {
@@ -104,48 +98,48 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function setRandomGridPosition(gif) {
-    var xIndex = Math.floor(Math.random() * gridSize);
-    var yIndex = Math.floor(Math.random() * gridSize);
+    const xIndex = Math.floor(Math.random() * gridSize);
+    const yIndex = Math.floor(Math.random() * gridSize);
 
-    var xPosition = xIndex * gridCellWidth;
-    var yPosition = yIndex * gridCellHeight;
+    const xPosition = xIndex * gridCellWidth;
+    const yPosition = yIndex * gridCellHeight;
 
-    gif.style.left = xPosition + "%";
-    gif.style.top = yPosition + "%";
+    gif.style.left = `${xPosition}%`;
+    gif.style.top = `${yPosition}%`;
   }
 
-  function updateGifPosition(gifObj) {
-    var gif = gifObj.gif;
-
+  function updateGifPosition(gif, gifData) {
     // Update position at regular intervals
-    setInterval(function () {
-      
+    setInterval(() => {
+      if (!gifData.spawned) {
         // Calculate new position within the grid
-        var newXIndex = Math.floor(Math.random() * gridSize);
-        var newYIndex = Math.floor(Math.random() * gridSize);
+        const newXIndex = Math.floor(Math.random() * gridSize);
+        const newYIndex = Math.floor(Math.random() * gridSize);
 
-        var newXPosition = newXIndex * gridCellWidth;
-        var newYPosition = newYIndex * gridCellHeight;
+        const newXPosition = newXIndex * gridCellWidth;
+        const newYPosition = newYIndex * gridCellHeight;
 
         // Animate the migration
         animateMigration(gif, newXPosition, newYPosition);
+        gifData.spawned = true;
+      }
     }, migrationInterval);
   }
 
   function animateMigration(gif, newX, newY) {
-    var currentX = parseFloat(gif.style.left);
-    var currentY = parseFloat(gif.style.top);
+    const currentX = parseFloat(gif.style.left);
+    const currentY = parseFloat(gif.style.top);
 
-    var deltaX = (newX - currentX) / 100; // Adjust the migration speed
-    var deltaY = (newY - currentY) / 90;
+    const deltaX = (newX - currentX) / 100; // Adjust the migration speed
+    const deltaY = (newY - currentY) / 100;
 
-    var step = 0;
-    var migrationStep = setInterval(function () {
-      var nextX = currentX + step * deltaX;
-      var nextY = currentY + step * deltaY;
+    let step = 0;
+    const migrationStep = setInterval(() => {
+      const nextX = currentX + step * deltaX;
+      const nextY = currentY + step * deltaY;
 
-      gif.style.left = nextX + "%";
-      gif.style.top = nextY + "%";
+      gif.style.left = `${nextX}%`;
+      gif.style.top = `${nextY}%`;
 
       step++;
 
@@ -162,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Generate initial GIFs
-  for (var i = 0; i < gifs.length; i++) {
-    createRandomGif(gifs[i]);
+  for (const gifData of gifs) {
+    createRandomGif(gifData);
   }
 });
