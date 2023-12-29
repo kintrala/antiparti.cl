@@ -1,8 +1,7 @@
-
 :root {
-  --color-bg: #69F7BE;
-  --color-text-main: ##F0FFF0;
-  --color-primary: #F0FFF0;
+  --color-bg: #69f7be;
+  --color-text-main: ##f0fff0;
+  --color-primary: #f0fff0;
   --wrapper-height: 87vh;
   --image-max-width: 300px;
   --image-margin: 3rem;
@@ -37,57 +36,28 @@ body {
   background-image: url("https://cdn.glitch.me/19179d05-053f-438b-98d8-05a32e66c1e5/sbs.gif");
   background-size: cover;
   background-position: center;
-    height: 100vh;
-    padding:0;
-    margin:0;
 }
 
-/* Page structure */
-.wrapper {
-  min-height: var(--wrapper-height);
-  display: grid;
-  place-items: center;
-  margin: 0 1rem;
-}
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.title {
-  color: #2800FF;
-  font-family: Stick;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 100px;
-  line-height: 105%;
-  margin: 0;
-}
 #gifContainer {
   display: flex;
   flex-wrap: wrap;
 }
 
 .gif {
-  width: 100%;
-  height: 100%;
+  width: 10%;
+  height: 10%;
   margin: 10px;
   cursor: pointer;
 }
 
-
-/* Subheading */
 h1 {
   font-family: Stick;
   font-size: 100%;
 }
 h2 {
   font-family: Stick;
-  color: #2800FF;
+  color: #2800ff;
 }
-
 
 #popup {
   display: none;
@@ -102,15 +72,13 @@ h2 {
   flex-direction: column;
 }
 
+#iframeContainer {
+  position: relative;
+}
+
 #iframe {
   width: 80%;
   height: 80%;
   border: none;
 }
-#closeButton {
-  margin-top: 10px;
-  padding: 10px;
-  background-color: #fff;
-  color: #000;
-  cursor: pointer;
-}
+
