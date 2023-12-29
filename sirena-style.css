@@ -36,6 +36,7 @@ body {
   font-family: Stick;
   background-image: url("https://cdn.glitch.me/19179d05-053f-438b-98d8-05a32e66c1e5/sbs.gif");
   background-size: cover;
+  background-position: center;
     height: 100vh;
     padding:0;
     margin:0;
@@ -55,7 +56,6 @@ body {
   justify-content: center;
 }
 
-/* Very light scaling for our illustration */
 .title {
   color: #2800FF;
   font-family: Stick;
@@ -65,31 +65,18 @@ body {
   line-height: 105%;
   margin: 0;
 }
-
-/* Very light scaling for our illustration */
-.illustration {
-  max-width: 100%;
-  max-height: var(--image-max-width);
-  margin-top: var(--image-margin);
+#gifContainer {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-/* Instructions */
-.instructions {
-  margin: 1rem auto 0;
+.gif {
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  cursor: pointer;
 }
 
-/* Button - Add it from the README instructions */
-button,
-input {
-  font-family: Stick;
-  font-size: 100%;
-  background: #FFFFFF;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-  transition: 500ms;
-}
 
 /* Subheading */
 h1 {
@@ -101,45 +88,29 @@ h2 {
   color: #2800FF;
 }
 
-/* Style for the overlay */
-.overlay {
+
+#popup {
   display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-/* Style for the popup */
-.popup {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  padding: 1px;
-  text-align: center;
-  z-index: 1; /* Ensure the popup is above the overlay */
-  resize: both; /* Enable resizing */
-  overflow: auto; /* Enable scrolling if content overflows */
-  max-width: 80%; /* Set a maximum width for the popup */
-  max-height: 80%; /* Set a maximum height for the popup */
-  display: flex;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
-/* Style for the close button */
-.close-btn {
-  align-self: flex-end;
+#iframe {
+  width: 80%;
+  height: 80%;
+  border: none;
+}
+#closeButton {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
   cursor: pointer;
 }
-
-/* Style for the iframe */
-iframe {
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 16 / 9; /* Set the aspect ratio (16:9 in this example) */
-}
-
