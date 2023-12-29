@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://archive.org/embed/SIRENA-300_curves_by_Martina_Noskova",
     },
     {
-      url: "https://antiparti.cl/img/Sirena/plompy-blob.gif",
+      url: "https://antiparti.cl/img/Sirena/pompy-blob.gif",
       contentUrl: "https://archive.org/embed/SIRENA-Ruido_Rosa_by_Oksana_Rudko",
     },
     {
