@@ -32,32 +32,13 @@
 }
 
 body {
+  margin: 0;
   font-family: Stick;
   background-image: url("https://cdn.glitch.me/19179d05-053f-438b-98d8-05a32e66c1e5/sbs.gif");
   background-size: cover;
   background-position: center;
 }
 
-#gifContainer {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.gif {
-  width: 10%;
-  height: 10%;
-  margin: 10px;
-  cursor: pointer;
-}
-
-h1 {
-  font-family: Stick;
-  font-size: 100%;
-}
-h2 {
-  font-family: Stick;
-  color: #2800ff;
-}
 
 #popup {
   display: none;
@@ -79,6 +60,8 @@ h2 {
 #iframe {
   width: 80%;
   height: 80%;
-  border: none;
+  border: outset;
 }
+
+
 

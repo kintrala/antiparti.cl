@@ -71,9 +71,10 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   ];
 
-  var gridSize = 5; // Adjust this value to control the grid size
-  var gridCellWidth = 100 / gridSize;
-  var gridCellHeight = 100 / gridSize;
+  var spawnedGifs = [];
+  var gridSize = 7; // Adjust this value to control the grid size
+  var gridCellWidth = 80 / gridSize;
+  var gridCellHeight = 80 / gridSize;
   var migrationInterval = 5000; // Adjust this value to control the migration interval (in milliseconds)
 
   function createRandomGif(gifData) {
@@ -89,6 +90,9 @@ document.addEventListener("DOMContentLoaded", function () {
     setRandomGridPosition(gif);
 
     gifContainer.appendChild(gif);
+
+    // Add the spawned gif to the list
+    spawnedGifs.push({ gif: gif, data: gifData });
 
     // Set initial position and update at regular intervals
     updateGifPosition(gif, gifData);
@@ -123,12 +127,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Animate the migration
         animateMigration(gif, newXPosition, newYPosition);
-
-        // Remove the gifData from the list to ensure it's spawned only once
-        gifs = gifs.filter(function (item) {
-          return item !== gifData;
-        });
-      }
     }, migrationInterval);
   }
 
@@ -155,14 +153,4 @@ document.addEventListener("DOMContentLoaded", function () {
     }, migrationInterval / 100);
   }
 
-  document.addEventListener("click", function (event) {
-    if (event.target === popup) {
-      popup.style.display = "none";
-    }
-  });
-
-  // Generate initial GIFs
-  for (var i = 0; i < gifs.length; i++) {
-    createRandomGif(gifs[i]);
-  }
-});
+ 
