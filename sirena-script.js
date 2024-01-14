@@ -153,13 +153,15 @@ document.addEventListener("DOMContentLoaded", function () {
   
     popup.style.display = "flex";
   
-    currentGif = iframe.contentWindow;
+    // Clear the previous interval if there's one
+    clearInterval(currentGifReset);
   
     // Allow new content to be opened after clicking a different gif
-    setTimeout(() => {
+    currentGifReset = setTimeout(() => {
       currentGif = null;
     }, 1000);
   }
+  
   
 
   function setRandomGridPosition(gif) {
