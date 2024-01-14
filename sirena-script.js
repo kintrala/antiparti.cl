@@ -69,6 +69,33 @@ document.addEventListener("DOMContentLoaded", function () {
       url: "https://antiparti.cl/img/Sirena/morphishy.gif",
       contentUrl: "https://archive.org/embed/SIRENA-Drinkable_by_Flounder_Lee",
     },
+    {
+      url: "https://antiparti.cl/img/Sirena/apoppy.gif",
+      contentUrl: "https://archive.org/embed/SIRENA-Mirrors_by_Phatty",
+    },
+    {
+      url: "https://antiparti.cl/img/Sirena/tardy.gif",
+      contentUrl: "https://archive.org/embed/SIRENA-PHASE_by_Davel",
+    },
+    {
+      url: "https://antiparti.cl/img/Sirena/pulpy.gif",
+      contentUrl: "https://archive.org/embed/SIRENA-HEXMODULAR_by_Davel",
+    },
+    {
+      url: "https://antiparti.cl/img/Sirena/Sophi.gif",
+      contentUrl: "https://archive.org/embed/SIRENA-JVPURETIBET_by_Davel",
+    },
+    {
+      url: "https://antiparti.cl/img/Sirena/grace.gif",
+      contentUrl: "https://archive.org/embed/SIRENA-JVPURETIBET_by_Davel",
+    },
+    {
+      url: "https://antiparti.cl/img/Sirena/Qorky.gif",
+      contentUrl: "{
+        url: "https://antiparti.cl/img/Sirena/grace.gif",
+        contentUrl: "https://archive.org/embed/SIRENA-JVPURETIBET_by_Davel",
+      },",
+    },
   ];
 
   const gridSize = 5; // Adjust this value to control the grid size
