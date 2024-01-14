@@ -140,19 +140,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function openPopup(contentUrl) {
     if (currentGif) {
-        currentGif.pause();
+      currentGif.pause();
     }
-
+  
+    // Set the size of the iframe
+    const iframeWidth = window.innerWidth * 0.8; // 80% of the window width
+    const iframeHeight = window.innerHeight * 0.8; // 80% of the window height
+  
     iframe.src = contentUrl;
+    iframe.style.width = `${iframeWidth}px`;
+    iframe.style.height = `${iframeHeight}px`;
+  
     popup.style.display = "flex";
-
+  
     currentGif = iframe.contentWindow;
-
+  
     // Allow new content to be opened after clicking a different gif
     setTimeout(() => {
-        currentGif = null;
+      currentGif = null;
     }, 1000);
-} 
+  }
+  
 
   function setRandomGridPosition(gif) {
     const xIndex = Math.floor(Math.random() * gridSize);
