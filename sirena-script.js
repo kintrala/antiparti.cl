@@ -98,10 +98,10 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   ];
 
-  const gridSize = 4; // Adjust this value to control the grid size
-  const gridCellWidth = 50 / gridSize;
-  const gridCellHeight = 50 / gridSize;
-  const migrationInterval = 6000; // Adjust this value to control the migration interval (in milliseconds)
+  const gridSize = 5; // Adjust this value to control the grid size
+  const gridCellWidth = 90 / gridSize;
+  const gridCellHeight = 90 / gridSize;
+  const migrationInterval = 5000; // Adjust this value to control the migration interval (in milliseconds)
 
   let currentGif = null;
 
