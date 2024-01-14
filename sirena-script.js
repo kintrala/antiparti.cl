@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const gridSize = 5; // Adjust this value to control the grid size
   const gridCellWidth = 100 / gridSize;
-  const gridCellHeight = 0 / gridSize;
+  const gridCellHeight = 100 / gridSize;
   const migrationInterval = 5000; // Adjust this value to control the migration interval (in milliseconds)
 
   let currentGif = null;
@@ -184,27 +184,24 @@ document.addEventListener("DOMContentLoaded", function () {
   
 
   function animateMigration(gif, newX, newY) {
-    const currentX = parseFloat(gif.style.left);
-    const currentY = parseFloat(gif.style.top);
-
-    const deltaX = (newX - currentX) / 100; // Adjust the migration speed
-    const deltaY = (newY - currentY) / 90;
-
-    let step = 0;
-    const migrationStep = setInterval(() => {
-      const nextX = currentX + step * deltaX;
-      const nextY = currentY + step * deltaY;
-
-      gif.style.left = `${nextX}%`;
-      gif.style.top = `${nextY}%`;
-
-      step++;
-
-      if (step > 100) {
-        clearInterval(migrationStep);
+    let currentX = parseFloat(gif.style.left);
+    let currentY = parseFloat(gif.style.top);
+  
+    function step() {
+      currentX += (newX - currentX) / 100;
+      currentY += (newY - currentY) / 90;
+  
+      gif.style.left = `${currentX}%`;
+      gif.style.top = `${currentY}%`;
+  
+      if (Math.abs(currentX - newX) > 0.1 || Math.abs(currentY - newY) > 0.1) {
+        requestAnimationFrame(step);
       }
-    }, migrationInterval / 100);
+    }
+  
+    step();
   }
+  
 
   document.addEventListener("click", function (event) {
     if (event.target === popup) {
