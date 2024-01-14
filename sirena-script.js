@@ -5,29 +5,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const gifs = [
     {
+      url: "https://antiparti.cl/img/Sirena/aonoo.gif",
+      contentUrl: "https://archive.org/embed/SIRENA-Liminal_Senses_by_FC_Zuke",
+    },
+    {
+      url: "https://antiparti.cl/img/Sirena/apoppy.gif",
+      contentUrl: "https://archive.org/embed/SIRENA-Mirrors_by_Phatty",
+    },
+    {
       url: "https://antiparti.cl/img/Sirena/baby-octo0.gif",
       contentUrl:
         "https://archive.org/embed/SIRENA-Yeu_Kieu_by_Tien_Nguyen_Minh",
-    },
-    {
-      url: "https://antiparti.cl/img/Sirena/daddo.gif",
-      contentUrl:
-        "https://archive.org/embed/SIRENA-Nation_Free_by_The_Mainstream_Official",
-    },
-    {
-      url: "https://antiparti.cl/img/Sirena/cleamm.gif",
-      contentUrl:
-        "https://archive.org/embed/SIRENA-Walking_With_The_Waves_by_Taiki_Arita",
-    },
-    {
-      url: "https://antiparti.cl/img/Sirena/iliketurtle.gif",
-      contentUrl:
-        "https://archive.org/embed/SIRENA-Metamorphosis_Kintsugi_by_Athina_Kanellopoulou",
-    },
-    {
-      url: "https://antiparti.cl/img/Sirena/octop.gif",
-      contentUrl:
-        "https://archive.org/embed/SIRENA-Climate_Change_by_Kayoko_Nakamura",
     },
     {
       url: "https://antiparti.cl/img/Sirena/blob.gif",
@@ -35,13 +23,18 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://archive.org/embed/SIRENA-FORCED-MIGRATION_by_Aleksei_Martyniuk",
     },
     {
-      url: "https://antiparti.cl/img/Sirena/insecticon.gif",
+      url: "https://antiparti.cl/img/Sirena/cleamm.gif",
       contentUrl:
-        "https://archive.org/embed/SIRENA-300_curves_by_Martina_Noskova",
+        "https://archive.org/embed/SIRENA-Walking_With_The_Waves_by_Taiki_Arita",
     },
     {
-      url: "https://antiparti.cl/img/Sirena/pompy-blob.gif",
-      contentUrl: "https://archive.org/embed/SIRENA-Ruido_Rosa_by_Oksana_Rudko",
+      url: "https://antiparti.cl/img/Sirena/crusty.gif",
+      contentUrl: "https://archive.org/embed/SIRENA-METANOIA_by_Nina_Sumarac",
+    },
+    {
+      url: "https://antiparti.cl/img/Sirena/daddo.gif",
+      contentUrl:
+        "https://archive.org/embed/SIRENA-Nation_Free_by_The_Mainstream_Official",
     },
     {
       url: "https://antiparti.cl/img/Sirena/fishyy.gif",
@@ -49,8 +42,59 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://archive.org/embed/SIRENA-Serpenti_e_Scale_by_Giuseppe_de_Benedittis",
     },
     {
+      url: "https://antiparti.cl/img/Sirena/grace.gif",
+      contentUrl: "https://archive.org/embed/SIRENA-JVPURETIBET_by_Davel",
+    },
+    {
+      url: "https://antiparti.cl/img/Sirena/hungryy.gif",
+      contentUrl: "https://archive.org/embed/SIRENA_by_IDKLANG",
+    },
+    {
+      url: "https://antiparti.cl/img/Sirena/iliketurtle.gif",
+      contentUrl:
+        "https://archive.org/embed/SIRENA-Metamorphosis_Kintsugi_by_Athina_Kanellopoulou",
+    },
+    {
+      url: "https://antiparti.cl/img/Sirena/insecticon.gif",
+      contentUrl:
+        "https://archive.org/embed/SIRENA-300_curves_by_Martina_Noskova",
+    },
+    {
       url: "https://antiparti.cl/img/Sirena/Lea.gif",
       contentUrl: "https://archive.org/embed/SIRENA-Madena_by_Magdi_Mostafa",
+    },
+    {
+      url: "https://antiparti.cl/img/Sirena/morphishy.gif",
+      contentUrl: "https://archive.org/embed/SIRENA-Drinkable_by_Flounder_Lee",
+    },
+    {
+      url: "https://antiparti.cl/img/Sirena/noisibaddo.gif",
+      contentUrl: "https://archive.org/embed/SIRENA-Coal_2diamond_by_Deatxwish",
+    },
+    {
+      url: "https://antiparti.cl/img/Sirena/octop.gif",
+      contentUrl:
+        "https://archive.org/embed/SIRENA-Climate_Change_by_Kayoko_Nakamura",
+    },
+    {
+      url: "https://antiparti.cl/img/Sirena/pompy-blob.gif",
+      contentUrl: "https://archive.org/embed/SIRENA-Ruido_Rosa_by_Oksana_Rudko",
+    },
+    {
+      url: "https://antiparti.cl/img/Sirena/pulpi.gif",
+      contentUrl: "https://archive.org/embed/SIRENA-HEXMODULAR_by_Davel",
+    },
+    {
+      url: "https://antiparti.cl/img/Sirena/Qorky.gif",
+      contentUrl: "https://archive.org/embed/SIRENA-Suicide_Note_0.1_by_Contaminated_Carcass",
+    },
+    {
+      url: "https://antiparti.cl/img/Sirena/shifishu.gif",
+      contentUrl: "https://archive.org/embed/SIRENA-I_Dunno_by_Deatxwish",
+    },
+    {
+      url: "https://antiparti.cl/img/Sirena/Sophi.gif",
+      contentUrl: "https://archive.org/embed/SIRENA-JVPURETIBET_by_Davel",
     },
     {
       url: "https://antiparti.cl/img/Sirena/spiny-puppy.gif",
@@ -58,49 +102,22 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://archive.org/embed/SIRENA-Lifelike_by_Ioana_and_Pablo",
     },
     {
-      url: "https://antiparti.cl/img/Sirena/crusty.gif",
-      contentUrl: "https://archive.org/embed/SIRENA-METANOIA_by_Nina_Sumarac",
-    },
-    {
-      url: "https://antiparti.cl/img/Sirena/hungryy.gif",
-      contentUrl: "https://archive.org/embed/SIRENA_by_IDKLANG",
-    },
-    {
-      url: "https://antiparti.cl/img/Sirena/morphishy.gif",
-      contentUrl: "https://archive.org/embed/SIRENA-Drinkable_by_Flounder_Lee",
-    },
-    {
-      url: "https://antiparti.cl/img/Sirena/apoppy.gif",
-      contentUrl: "https://archive.org/embed/SIRENA-Mirrors_by_Phatty",
-    },
-    {
       url: "https://antiparti.cl/img/Sirena/tardy.gif",
       contentUrl: "https://archive.org/embed/SIRENA-PHASE_by_Davel",
     },
-    {
-      url: "https://antiparti.cl/img/Sirena/pulpy.gif",
-      contentUrl: "https://archive.org/embed/SIRENA-HEXMODULAR_by_Davel",
-    },
-    {
-      url: "https://antiparti.cl/img/Sirena/Sophi.gif",
-      contentUrl: "https://archive.org/embed/SIRENA-JVPURETIBET_by_Davel",
-    },
-    {
-      url: "https://antiparti.cl/img/Sirena/grace.gif",
-      contentUrl: "https://archive.org/embed/SIRENA-JVPURETIBET_by_Davel",
-    },
-    {
-      url: "https://antiparti.cl/img/Sirena/Qorky.gif",
-      contentUrl: "{
-        url: "https://antiparti.cl/img/Sirena/grace.gif",
-        contentUrl: "https://archive.org/embed/SIRENA-JVPURETIBET_by_Davel",
-      },",
-    },
+    
+    
+   
+    
+   
+      
+      
+  
   ];
 
   const gridSize = 5; // Adjust this value to control the grid size
-  const gridCellWidth = 90 / gridSize;
-  const gridCellHeight = 90 / gridSize;
+  const gridCellWidth = 100 / gridSize;
+  const gridCellHeight = 0 / gridSize;
   const migrationInterval = 5000; // Adjust this value to control the migration interval (in milliseconds)
 
   let currentGif = null;
