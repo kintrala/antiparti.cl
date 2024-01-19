@@ -1,12 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const gifContainer = document.getElementById("gifContainer");
-    const popup = document.getElementById("popup");
-    const iframe = document.getElementById("iframe");
-    let currentGifReset = null;
-    let r = null; 
+  const gifContainer = document.getElementById("gifContainer");
+  const popup = document.getElementById("popup");
+  const iframe = document.getElementById("iframe");
+  let r = null;
 
-   
-  
     const imageList = [
       {
         url: "https://antiparti.cl/img/Sirena/aonoo.gif",
@@ -112,75 +109,58 @@ document.addEventListener("DOMContentLoaded", function () {
     ];
   
     function lazyLoadImage(image) {
-        const img = new Image();
-        img.src = image.url;
-        img.className = "gif";
-        img.style.position = "absolute";
-        img.style.left = `${20 * Math.floor(5 * Math.random())}%`;
-        img.style.top = `${20 * Math.floor(5 * Math.random())}%`;
+      const img = new Image();
+      img.src = image.url;
+      img.className = "gif";
+      img.style.position = "absolute";
+      img.style.left = `${20 * Math.floor(5 * Math.random())}%`;
+      img.style.top = `${20 * Math.floor(5 * Math.random())}%`;
 
-        img.addEventListener("click", () => {
-            openPopup(image.contentUrl);
-        });
+      img.addEventListener("click", () => {
+          openPopup(image.contentUrl);
+      });
 
-        gifContainer.appendChild(img);
+      gifContainer.appendChild(img);
 
-        // Set up lazy loading for the image
-        img.loading = "lazy";
+      // Set up lazy loading for the image
+      img.loading = "lazy";
 
-        return img;
-    }
+      return img;
+  }
 
-    function openPopup(contentUrl) {
-        if (r) r.pause();
-        const windowWidth = 0.8 * window.innerWidth;
-        const windowHeight = 0.8 * window.innerHeight;
-        iframe.src = contentUrl;
-        iframe.style.width = `${windowWidth}px`;
-        iframe.style.height = `${windowHeight}px`;
-        popup.style.display = "flex";
-        clearInterval(currentGifReset);
-        currentGifReset = setTimeout(() => {
-            // Pause or unload the iframe content
-            iframe.src = "about:blank"; // This will unload the content
-            r = null;
-        }, 1000);
-    }
+  function openPopup(contentUrl) {
+      if (r) r.pause();
+      const windowWidth = 0.8 * window.innerWidth;
+      const windowHeight = 0.8 * window.innerHeight;
+      iframe.src = contentUrl;
+      iframe.style.width = `${windowWidth}px`;
+      iframe.style.height = `${windowHeight}px`;
+      popup.style.display = "flex";
+      clearInterval(currentGifReset);
+      currentGifReset = setTimeout(() => {
+          // Pause or unload the iframe content
+          iframe.src = "about:blank"; // This will unload the content
+          r = null;
+      }, 1000);
+  }
 
-    // Event delegation for image clicks
-    gifContainer.addEventListener("click", function (event) {
-        const target = event.target;
-        if (target.tagName === "IMG") {
-            const index = Array.from(gifContainer.children).indexOf(target);
-            if (index !== -1) {
-                openPopup(imageList[index].contentUrl);
-            }
-        }
-    });
+  // Event delegation for image clicks and closing iframe
+  document.addEventListener("click", function (event) {
+      const target = event.target;
 
-    // Event delegation for image clicks and closing iframe
-    document.addEventListener("click", function (event) {
-        const target = event.target;
+      if (target.tagName === "IMG") {
+          const index = Array.from(gifContainer.children).indexOf(target);
+          if (index !== -1) {
+              openPopup(imageList[index].contentUrl);
+          }
+      } else if (target === popup || (target.tagName !== "IFRAME" && !target.closest("#iframe"))) {
+          // Clicking outside the iframe closes it
+          popup.style.display = "none";
+          iframe.src = "about:blank"; // Unload the content
+          r = null;
+      }
+  });
 
-        if (target.tagName === "IMG") {
-            const index = Array.from(gifContainer.children).indexOf(target);
-            if (index !== -1) {
-                openPopup(imageList[index].contentUrl);
-            }
-        } else if (
-            target === popup ||
-            (target.tagName !== "IFRAME" && !target.closest("#iframe"))
-        ) {
-            // Clicking outside the iframe closes it
-            popup.style.display = "none";
-            iframe.src = "about:blank"; // Unload the content
-            r = null;
-        }
-    });
-
-    // Preload images (using lazy loading)
-    imageList.forEach(lazyLoadImage);
-
-    // Create images
-    // No need for a setInterval in this case, as the animations will happen naturally
+  // Preload images (using lazy loading)
+  imageList.forEach(lazyLoadImage);
 });
