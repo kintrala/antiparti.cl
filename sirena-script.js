@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const popup = document.getElementById("popup");
     const iframe = document.getElementById("iframe");
     let currentGifReset = null;
+    let r = null; // Declare the 'r' variable
+
+   
   
     const imageList = [
       {
@@ -110,12 +113,12 @@ document.addEventListener("DOMContentLoaded", function () {
   
     function preloadImages(images) {
         images.forEach((image) => {
-          const img = new Image();
-          img.src = image.url;
+            const img = new Image();
+            img.src = image.url;
         });
-      }
-    
-      function openPopup(contentUrl) {
+    }
+
+    function openPopup(contentUrl) {
         if (r) r.pause();
         const windowWidth = 0.8 * window.innerWidth;
         const windowHeight = 0.8 * window.innerHeight;
@@ -125,66 +128,58 @@ document.addEventListener("DOMContentLoaded", function () {
         popup.style.display = "flex";
         clearInterval(currentGifReset);
         currentGifReset = setTimeout(() => {
-          r = null;
+            r = null;
         }, 1000);
-      }
-    
-      function createImage(image) {
+    }
+
+    function createImage(image) {
         const img = document.createElement("img");
         img.src = image.url;
         img.className = "gif";
         img.style.position = "absolute";
         img.style.left = `${20 * Math.floor(5 * Math.random())}%`;
         img.style.top = `${20 * Math.floor(5 * Math.random())}%`;
-    
+
         img.addEventListener("click", () => {
-          openPopup(image.contentUrl);
-        });}
-    
-        // Event delegation for image clicks
-gifContainer.addEventListener("click", function (event) {
-    const target = event.target;
-    if (target.tagName === "IMG") {
-      const index = Array.from(gifContainer.children).indexOf(target);
-      if (index !== -1) {
-        openPopup(imageList[index].contentUrl);
-      }
-    }
-  });
-  
-    
+            openPopup(image.contentUrl);
+        });
+
+        gifContainer.appendChild(img);
+
         setInterval(() => {
-          let left = parseFloat(img.style.left);
-          let top = parseFloat(img.style.top);
-          const targetLeft = 20 * Math.floor(5 * Math.random());
-          const targetTop = 20 * Math.floor(5 * Math.random());
-    
-          function animate() {
-            left += (targetLeft - left) / 100;
-            top += (targetTop - top) / 90;
-            img.style.left = `${left}%`;
-            img.style.top = `${top}%`;
-            if (Math.abs(left - targetLeft) > 0.1 || Math.abs(top - targetTop) > 0.1) {
-              requestAnimationFrame(animate);
+            let left = parseFloat(img.style.left);
+            let top = parseFloat(img.style.top);
+            const targetLeft = 20 * Math.floor(5 * Math.random());
+            const targetTop = 20 * Math.floor(5 * Math.random());
+
+            function animate() {
+                left += (targetLeft - left) / 100;
+                top += (targetTop - top) / 90;
+                img.style.left = `${left}%`;
+                img.style.top = `${top}%`;
+                if (Math.abs(left - targetLeft) > 0.1 || Math.abs(top - targetTop) > 0.1) {
+                    requestAnimationFrame(animate);
+                }
             }
-          }
-    
-          animate();
+
+            animate();
         }, 5000);
-      }
-    
-      // Preload images
-      preloadImages(imageList);
-    
-      // Create images and attach event delegation
-      gifContainer.addEventListener("click", function (event) {
+    }
+
+    // Event delegation for image clicks
+    gifContainer.addEventListener("click", function (event) {
         const target = event.target;
         if (target.tagName === "IMG") {
-          const index = Array.from(target.parentNode.children).indexOf(target);
-          openPopup(imageList[index].contentUrl);
+            const index = Array.from(gifContainer.children).indexOf(target);
+            if (index !== -1) {
+                openPopup(imageList[index].contentUrl);
+            }
         }
-      });
-    
-      // Create images
-      imageList.forEach(createImage);
     });
+
+    // Preload images
+    preloadImages(imageList);
+
+    // Create images
+    imageList.forEach(createImage);
+});
