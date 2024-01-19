@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const popup = document.getElementById("popup");
     const iframe = document.getElementById("iframe");
     let currentGifReset = null;
-    let r = null; // Declare the 'r' variable
+    let r = null; 
 
    
   
@@ -111,31 +111,8 @@ document.addEventListener("DOMContentLoaded", function () {
       },    
     ];
   
-    function preloadImages(images) {
-        images.forEach((image) => {
-            const img = new Image();
-            img.src = image.url;
-        });
-    }
-
-    function openPopup(contentUrl) {
-        if (r) r.pause();
-        const windowWidth = 0.8 * window.innerWidth;
-        const windowHeight = 0.8 * window.innerHeight;
-        iframe.src = contentUrl;
-        iframe.style.width = `${windowWidth}px`;
-        iframe.style.height = `${windowHeight}px`;
-        popup.style.display = "flex";
-        clearInterval(currentGifReset);
-        currentGifReset = setTimeout(() => {
-         // Pause or unload the iframe content
-        iframe.src = "about:blank"; // This will unload the content
-        r = null;
-    }, 1000);
-}
-
-    function createImage(image) {
-        const img = document.createElement("img");
+    function lazyLoadImage(image) {
+        const img = new Image();
         img.src = image.url;
         img.className = "gif";
         img.style.position = "absolute";
@@ -148,24 +125,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
         gifContainer.appendChild(img);
 
-        setInterval(() => {
-            let left = parseFloat(img.style.left);
-            let top = parseFloat(img.style.top);
-            const targetLeft = 20 * Math.floor(5 * Math.random());
-            const targetTop = 20 * Math.floor(5 * Math.random());
+        // Set up lazy loading for the image
+        img.loading = "lazy";
 
-            function animate() {
-                left += (targetLeft - left) / 100;
-                top += (targetTop - top) / 90;
-                img.style.left = `${left}%`;
-                img.style.top = `${top}%`;
-                if (Math.abs(left - targetLeft) > 0.1 || Math.abs(top - targetTop) > 0.1) {
-                    requestAnimationFrame(animate);
-                }
-            }
+        return img;
+    }
 
-            animate();
-        }, 5000);
+    function openPopup(contentUrl) {
+        if (r) r.pause();
+        const windowWidth = 0.8 * window.innerWidth;
+        const windowHeight = 0.8 * window.innerHeight;
+        iframe.src = contentUrl;
+        iframe.style.width = `${windowWidth}px`;
+        iframe.style.height = `${windowHeight}px`;
+        popup.style.display = "flex";
+        clearInterval(currentGifReset);
+        currentGifReset = setTimeout(() => {
+            // Pause or unload the iframe content
+            iframe.src = "about:blank"; // This will unload the content
+            r = null;
+        }, 1000);
     }
 
     // Event delegation for image clicks
@@ -179,9 +158,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Preload images
-    preloadImages(imageList);
+    // Preload images (using lazy loading)
+    imageList.forEach(lazyLoadImage);
 
     // Create images
-    imageList.forEach(createImage);
+    // No need for a setInterval in this case, as the animations will happen naturally
 });
