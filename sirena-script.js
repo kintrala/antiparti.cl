@@ -158,6 +158,26 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    // Event delegation for image clicks and closing iframe
+    document.addEventListener("click", function (event) {
+        const target = event.target;
+
+        if (target.tagName === "IMG") {
+            const index = Array.from(gifContainer.children).indexOf(target);
+            if (index !== -1) {
+                openPopup(imageList[index].contentUrl);
+            }
+        } else if (
+            target === popup ||
+            (target.tagName !== "IFRAME" && !target.closest("#iframe"))
+        ) {
+            // Clicking outside the iframe closes it
+            popup.style.display = "none";
+            iframe.src = "about:blank"; // Unload the content
+            r = null;
+        }
+    });
+
     // Preload images (using lazy loading)
     imageList.forEach(lazyLoadImage);
 
