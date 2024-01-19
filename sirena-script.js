@@ -128,9 +128,11 @@ document.addEventListener("DOMContentLoaded", function () {
         popup.style.display = "flex";
         clearInterval(currentGifReset);
         currentGifReset = setTimeout(() => {
-            r = null;
-        }, 1000);
-    }
+         // Pause or unload the iframe content
+        iframe.src = "about:blank"; // This will unload the content
+        r = null;
+    }, 1000);
+}
 
     function createImage(image) {
         const img = document.createElement("img");
