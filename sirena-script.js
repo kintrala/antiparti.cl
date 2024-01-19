@@ -141,7 +141,17 @@ document.addEventListener("DOMContentLoaded", function () {
           openPopup(image.contentUrl);
         });
     
-        gifContainer.appendChild(img);
+        // Event delegation for image clicks
+gifContainer.addEventListener("click", function (event) {
+    const target = event.target;
+    if (target.tagName === "IMG") {
+      const index = Array.from(gifContainer.children).indexOf(target);
+      if (index !== -1) {
+        openPopup(imageList[index].contentUrl);
+      }
+    }
+  });
+  
     
         setInterval(() => {
           let left = parseFloat(img.style.left);
