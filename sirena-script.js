@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
         img.addEventListener("click", () => {
           openPopup(image.contentUrl);
-        });
+        });}
     
         // Event delegation for image clicks
 gifContainer.addEventListener("click", function (event) {
