@@ -128,6 +128,27 @@ document.addEventListener("DOMContentLoaded", function () {
       return img;
   }
 
+  function migrateImage(img) {
+      setInterval(() => {
+          let left = parseFloat(img.style.left);
+          let top = parseFloat(img.style.top);
+          const targetLeft = 20 * Math.floor(5 * Math.random());
+          const targetTop = 20 * Math.floor(5 * Math.random());
+
+          function animate() {
+              left += (targetLeft - left) / 100;
+              top += (targetTop - top) / 90;
+              img.style.left = `${left}%`;
+              img.style.top = `${top}%`;
+              if (Math.abs(left - targetLeft) > 0.1 || Math.abs(top - targetTop) > 0.1) {
+                  requestAnimationFrame(animate);
+              }
+          }
+
+          animate();
+      }, 5000 + Math.random() * 3000); // Randomize migration interval between 5 and 8 seconds
+  }
+
   function openPopup(contentUrl) {
       if (r) r.pause();
       const windowWidth = 0.8 * window.innerWidth;
@@ -161,6 +182,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   });
 
-  // Preload images (using lazy loading)
-  imageList.forEach(lazyLoadImage);
+  // Preload images (using lazy loading) and initiate migration
+  imageList.map(lazyLoadImage).forEach(migrateImage);
 });
