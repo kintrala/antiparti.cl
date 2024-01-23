@@ -106,6 +106,10 @@ document.addEventListener("DOMContentLoaded", function () {
         url: "https://antiparti.cl/img/Sirena/tardy.gif",
         contentUrl: "https://archive.org/embed/SIRENA-PHASE_by_Davel",
       },    
+      {
+        url: "https://antiparti.cl/img/Sirena/bunbun.gif",
+        contentUrl: "https://archive.org/embed/SIRENA-2020.7.5_by_Hiroshi_Murakami",
+      },    
     ];
   
     function lazyLoadImage(image) {
