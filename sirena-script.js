@@ -110,6 +110,23 @@ document.addEventListener("DOMContentLoaded", function () {
         url: "https://antiparti.cl/img/Sirena/bunbun.gif",
         contentUrl: "https://archive.org/embed/SIRENA-2020.7.5_by_Hiroshi_Murakami",
       },    
+      {
+        url: "https://antiparti.cl/img/Sirena/bunbuny.gif",
+        contentUrl: "https://archive.org/embed/SIRENA-Equestrian_Teardrop_Power_by_Deatxwish",
+      }, 
+      {
+        url: "https://antiparti.cl/img/Sirena/vluup.gif",
+        contentUrl: "https://archive.org/embed/SIRENA-Kinga_Toth_by_Blanche_The_Vidiot",
+      },  
+      {
+        url: "https://antiparti.cl/img/Sirena/uffump.gif",
+        contentUrl: "https://archive.org/embed/SIRENA-Waterworks_by_Flounder_Lee",
+      },
+      {
+        url: "https://antiparti.cl/img/Sirena/billu.gif",
+        contentUrl: "https://archive.org/embed/SIRENA-Mountgrove_Modulation_by_Zander_Porter",
+      },
+      
     ];
   
     function lazyLoadImage(image) {
