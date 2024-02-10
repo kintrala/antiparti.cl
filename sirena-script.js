@@ -130,7 +130,10 @@ document.addEventListener("DOMContentLoaded", function () {
         url: "https://antiparti.cl/img/Sirena/waeh.gif",
         contentUrl: "https://www.spatial.io/s/Zhi-Zhi-64d00e484d4710ef26ea9be2?share=2898129440994129247",
       },
-      
+      {
+        url: "https://antiparti.cl/img/Sirena/anii.gif",
+        contentUrl: "https://www.youtube.com/embed/3gZaZAwNcX8?si=mhlLcB60mX5I2x4v",
+      },
     ];
   
     function lazyLoadImage(image) {
