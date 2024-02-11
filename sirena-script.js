@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
         contentUrl: "https://archive.org/embed/SIRENA-2020.7.5_by_Hiroshi_Murakami",
       },    
       {
-        url: "https://antiparti.cl/img/Sirena/bunbuny.gif",
+        url: "https://antiparti.cl/img/Sirena/bunbunny.gif",
         contentUrl: "https://archive.org/embed/SIRENA-Equestrian_Teardrop_Power_by_Deatxwish",
       }, 
       {
