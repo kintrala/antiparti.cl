@@ -134,6 +134,10 @@ document.addEventListener("DOMContentLoaded", function () {
         url: "https://antiparti.cl/img/Sirena/anii.gif",
         contentUrl: "https://www.youtube.com/embed/3gZaZAwNcX8?si=mhlLcB60mX5I2x4v",
       },
+      {
+        url: "https://antiparti.cl/img/Sirena/aisha.gif",
+        contentUrl: "https://archive.org/embed/SIRENA_Rusalka_SONIC_ALLURE_by_Ania_Urbanski",
+      },
     ];
   
     function lazyLoadImage(image) {
