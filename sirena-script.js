@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       {
         url: "https://antiparti.cl/img/Sirena/anii.gif",
-        contentUrl: "https://www.youtube.com/embed/3gZaZAwNcX8?si=mhlLcB60mX5I2x4v",
+        contentUrl: "https://www.youtube.com/embed/Go2lgkLkyCY?si=Re7GdwsXVwy0VjAi",
       },
       {
         url: "https://antiparti.cl/img/Sirena/aisha.gif",
