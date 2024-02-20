@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--
+   ██  ██  ██████  ██    ██ ███    ███ ██████  ██   ██  █████  ██    ██ ███████                                                            
+#  ████████ ██   ██ ██    ██ ████  ████ ██   ██ ██   ██ ██   ██ ██    ██ ██                                                                 
+#   ██  ██  ██   ██ ██    ██ ██ ████ ██ ██████  ███████ ███████ ██    ██ ███████                                                            
+#  ████████ ██   ██ ██    ██ ██  ██  ██ ██      ██   ██ ██   ██ ██    ██      ██                                                            
+#   ██  ██  ██████   ██████  ██      ██ ██      ██   ██ ██   ██  ██████  ███████                                                            
+#                                                                                                                                           
+#                                                                                                                                           
+#  ████████ ██   ██ ███████ ██     ██ ██████   ██████  ███    ██  ██████                                                                    
+#     ██    ██   ██ ██      ██     ██ ██   ██ ██    ██ ████   ██ ██                                                                         
+#     ██    ███████ █████   ██  █  ██ ██████  ██    ██ ██ ██  ██ ██   ███                                                                   
+#     ██    ██   ██ ██      ██ ███ ██ ██   ██ ██    ██ ██  ██ ██ ██    ██                                                                   
+#     ██    ██   ██ ███████  ███ ███  ██   ██  ██████  ██   ████  ██████                                                                    
+#                                                                                                                                           
+#                                                                                                                                           
+#  ██████   ██████  ██████  ██████        ██   ██                                                                                           
+#       ██ ██  ████      ██      ██       ██   ██                                                                                           
+#   █████  ██ ██ ██  █████   █████  █████ ███████                                                                                           
+#  ██      ████  ██ ██           ██            ██                                                                                           
+#  ███████  ██████  ███████ ██████             ██                                                                                           
+#                                                                                                                                           
+#                                                                                                                                           
+#                                                                                                                                           
+#                                                                                                                                           
+#                                                                                                                                           
+#                                                                                                                                           
+#                                                                                                                                           
+#                                                                                                                                           
+#                                                                                                                                           
+#   █████  ███    ██ ██ ███    ███  █████  ██          ██      ██ ██████  ███████ ██████   █████  ████████ ██  ██████  ███    ██            
+#  ██   ██ ████   ██ ██ ████  ████ ██   ██ ██          ██      ██ ██   ██ ██      ██   ██ ██   ██    ██    ██ ██    ██ ████   ██            
+#  ███████ ██ ██  ██ ██ ██ ████ ██ ███████ ██          ██      ██ ██████  █████   ██████  ███████    ██    ██ ██    ██ ██ ██  ██            
+#  ██   ██ ██  ██ ██ ██ ██  ██  ██ ██   ██ ██          ██      ██ ██   ██ ██      ██   ██ ██   ██    ██    ██ ██    ██ ██  ██ ██            
+#  ██   ██ ██   ████ ██ ██      ██ ██   ██ ███████     ███████ ██ ██████  ███████ ██   ██ ██   ██    ██    ██  ██████  ██   ████            
+#                                                                                                                                           
+#                                                                                                                                           
+#  ██████  ██       █████   ██████ ██   ██     ██      ██ ██    ██ ███████ ███████     ███    ███  █████  ████████ ████████ ███████ ██████  
+#  ██   ██ ██      ██   ██ ██      ██  ██      ██      ██ ██    ██ ██      ██          ████  ████ ██   ██    ██       ██    ██      ██   ██ 
+#  ██████  ██      ███████ ██      █████       ██      ██ ██    ██ █████   ███████     ██ ████ ██ ███████    ██       ██    █████   ██████  
+#  ██   ██ ██      ██   ██ ██      ██  ██      ██      ██  ██  ██  ██           ██     ██  ██  ██ ██   ██    ██       ██    ██      ██   ██ 
+#  ██████  ███████ ██   ██  ██████ ██   ██     ███████ ██   ████   ███████ ███████     ██      ██ ██   ██    ██       ██    ███████ ██   ██ 
+#                                                                                                                                           
+#                                                                                                                                           
+#  ███████ ██████  ███████ ███████     ██████   █████  ██      ███████ ███████ ████████ ██ ███    ██ ███████                                
+#  ██      ██   ██ ██      ██          ██   ██ ██   ██ ██      ██      ██         ██    ██ ████   ██ ██                                     
+#  █████   ██████  █████   █████       ██████  ███████ ██      █████   ███████    ██    ██ ██ ██  ██ █████                                  
+#  ██      ██   ██ ██      ██          ██      ██   ██ ██      ██           ██    ██    ██ ██  ██ ██ ██                                     
+#  ██      ██   ██ ███████ ███████     ██      ██   ██ ███████ ███████ ███████    ██    ██ ██   ████ ███████                                
+#                                                                                                                                           
+#                                                                                                                                           
+#  ███████ ██████  ███████ ███████      ██████  ██████  ███    ██  ██████   ██████                                                          
+#  ██      ██   ██ ██      ██          ██      ██    ██ ████   ██ ██       ██    ██                                                         
+#  █████   ██████  █████   █████       ██      ██    ██ ██ ██  ██ ██   ███ ██    ██                                                         
+#  ██      ██   ██ ██      ██          ██      ██    ██ ██  ██ ██ ██    ██ ██    ██                                                         
+#  ██      ██   ██ ███████ ███████      ██████  ██████  ██   ████  ██████   ██████                                                          
+#                                                                                    
+-->
+<head>
+  <title>S I R E N A ± P a v i l l i o n</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/img/Sirena/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="/sirena-style.css"/>
+  <style>
+    body {
+      font-family: "Stick", sans-serif;
+      color: #F0FFF0;
+      text-align: center;
+    }
+
+    p {
+      font-size: 25px;
+    }
+
+    h1 {
+      font-size: 100px;
+    }
+
+    h2 {
+      font-size: 40px;
+    }
+
+    .illustration {
+      max-width: 100%;
+      height: auto;
+    }
+
+    a {
+      color: #F0FFF0;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    #enterButton {
+      font-size: 24px;
+      background-color: #1abef5;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #2103e7;
+      transition: background-color 0.3s ease;
+    }
+
+    #enterButton:hover {
+      background-color: #4ca88b;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <br><br><br><br><br>
+    <div>
+        <a href="https://antiparti.cl/sirena.html"><h1>シ レ ナ<br>S I R E N A</h1></a>
+      <br><br>
+      <p>TheWrong Biennaleの#DUMPHAUSキュレーターによる東京大使館<br>The TOKYO EMBASSY By the #DUMPHAUS curators for TheWrong Biennale</p>
+      <br></br><br></br>
+      <h1>Self-Control Removal System</h1>
+      <br></br>
+      <h2>Download Page</h2>
+      <br></br>
+       
+      <div>
+        <br></br><br></br>
+        <a href="https://antiparti.cl/sirena-pavillion.html" id="enterButton">パビリオンに入る <br></br>ENTER THE PAVILLION</a>
+        <br></br><br></br>
+        
+        <br></br>
+        
+        
+      </div>
+    </div>
+  </div>
+  <br><br><br><br><br>
+  <div><p>#DUMPHAUS x TheWrong</p></div>
+</body>
+</html>
