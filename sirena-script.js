@@ -73,10 +73,6 @@ document.addEventListener("DOMContentLoaded", function () {
         contentUrl: "https://archive.org/embed/SIRENA-Coal_2diamond_by_Deatxwish",
       },
       {
-        url: "https://antiparti.cl/img/Sirena/octop.gif",
-  
-      },
-      {
         url: "https://antiparti.cl/img/Sirena/pompy-blob.gif",
         contentUrl: "https://archive.org/embed/SIRENA-Ruido_Rosa_by_Oksana_Rudko",
       },
