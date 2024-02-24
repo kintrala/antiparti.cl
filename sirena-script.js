@@ -74,8 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       {
         url: "https://antiparti.cl/img/Sirena/octop.gif",
-        contentUrl:
-          "https://archive.org/embed/SIRENA-Climate_Change_by_Kayoko_Nakamura",
+  
       },
       {
         url: "https://antiparti.cl/img/Sirena/pompy-blob.gif",
