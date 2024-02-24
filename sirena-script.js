@@ -7,115 +7,115 @@ document.addEventListener("DOMContentLoaded", function () {
     const imageList = [
       {
         url: "https://antiparti.cl/img/Sirena/aonoo.gif",
-        contentUrl: "https://archive.org/embed/SIRENA-Liminal_Senses_by_FC_Zuke",
+        contentUrl: "https://archive.org/embed/SIRENA-Liminal_Senses_by_FC_Zuke&autoplay=1",
       },
       {
         url: "https://antiparti.cl/img/Sirena/apoppy.gif",
-        contentUrl: "https://archive.org/embed/SIRENA-Mirrors_by_Phatty",
+        contentUrl: "https://archive.org/embed/SIRENA-Mirrors_by_Phatty&autoplay=1",
       },
       {
         url: "https://antiparti.cl/img/Sirena/baby-octo0.gif",
         contentUrl:
-          "https://archive.org/embed/SIRENA-Yeu_Kieu_by_Tien_Nguyen_Minh",
+          "https://archive.org/embed/SIRENA-Yeu_Kieu_by_Tien_Nguyen_Minh&autoplay=1",
       },
       {
         url: "https://antiparti.cl/img/Sirena/blob.gif",
         contentUrl:
-          "https://archive.org/embed/SIRENA-FORCED-MIGRATION_by_Aleksei_Martyniuk",
+          "https://archive.org/embed/SIRENA-FORCED-MIGRATION_by_Aleksei_Martyniuk&autoplay=1",
       },
       {
         url: "https://antiparti.cl/img/Sirena/cleamm.gif",
         contentUrl:
-          "https://archive.org/embed/SIRENA-Walking_With_The_Waves_by_Taiki_Arita",
+          "https://archive.org/embed/SIRENA-Walking_With_The_Waves_by_Taiki_Arita&autoplay=1",
       },
       {
         url: "https://antiparti.cl/img/Sirena/crusty.gif",
-        contentUrl: "https://archive.org/embed/SIRENA-METANOIA_by_Nina_Sumarac",
+        contentUrl: "https://archive.org/embed/SIRENA-METANOIA_by_Nina_Sumarac&autoplay=1",
       },
       {
         url: "https://antiparti.cl/img/Sirena/daddo.gif",
         contentUrl:
-          "https://archive.org/embed/SIRENA-Nation_Free_by_The_Mainstream_Official",
+          "https://archive.org/embed/SIRENA-Nation_Free_by_The_Mainstream_Official&autoplay=1",
       },
       {
         url: "https://antiparti.cl/img/Sirena/fishyy.gif",
         contentUrl:
-          "https://archive.org/embed/SIRENA-Serpenti_e_Scale_by_Giuseppe_de_Benedittis",
+          "https://archive.org/embed/SIRENA-Serpenti_e_Scale_by_Giuseppe_de_Benedittis&autoplay=1",
       },
       {
         url: "https://antiparti.cl/img/Sirena/grace.gif",
-        contentUrl: "https://archive.org/embed/SIRENA-JVPURETIBET_by_Davel",
+        contentUrl: "https://archive.org/embed/SIRENA-JVPURETIBET_by_Davel&autoplay=1",
       },
       {
         url: "https://antiparti.cl/img/Sirena/hungryy.gif",
-        contentUrl: "https://archive.org/embed/SIRENA_by_IDKLANG",
+        contentUrl: "https://archive.org/embed/SIRENA_by_IDKLANG&autoplay=1",
       },
       {
         url: "https://antiparti.cl/img/Sirena/iliketurtle.gif",
         contentUrl:
-          "https://archive.org/embed/SIRENA-Metamorphosis_Kintsugi_by_Athina_Kanellopoulou",
+          "https://archive.org/embed/SIRENA-Metamorphosis_Kintsugi_by_Athina_Kanellopoulou&autoplay=1",
       },
       {
         url: "https://antiparti.cl/img/Sirena/insecticon.gif",
         contentUrl:
-          "https://archive.org/embed/SIRENA-300_curves_by_Martina_Noskova",
+          "https://archive.org/embed/SIRENA-300_curves_by_Martina_Noskova&autoplay=1",
       },
       {
         url: "https://antiparti.cl/img/Sirena/Lea.gif",
-        contentUrl: "https://archive.org/embed/SIRENA-Madena_by_Magdi_Mostafa",
+        contentUrl: "https://archive.org/embed/SIRENA-Madena_by_Magdi_Mostafa&autoplay=1",
       },
       {
         url: "https://antiparti.cl/img/Sirena/morphishy.gif",
-        contentUrl: "https://archive.org/embed/SIRENA-Drinkable_by_Flounder_Lee",
+        contentUrl: "https://archive.org/embed/SIRENA-Drinkable_by_Flounder_Lee&autoplay=1",
       },
       {
         url: "https://antiparti.cl/img/Sirena/noisibaddo.gif",
-        contentUrl: "https://archive.org/embed/SIRENA-Coal_2diamond_by_Deatxwish",
+        contentUrl: "https://archive.org/embed/SIRENA-Coal_2diamond_by_Deatxwish&autoplay=1",
       },
       {
         url: "https://antiparti.cl/img/Sirena/pompy-blob.gif",
-        contentUrl: "https://archive.org/embed/SIRENA-Ruido_Rosa_by_Oksana_Rudko",
+        contentUrl: "https://archive.org/embed/SIRENA-Ruido_Rosa_by_Oksana_Rudko&autoplay=1",
       },
       {
         url: "https://antiparti.cl/img/Sirena/pulpi.gif",
-        contentUrl: "https://archive.org/embed/SIRENA-HEXMODULAR_by_Davel",
+        contentUrl: "https://archive.org/embed/SIRENA-HEXMODULAR_by_Davel&autoplay=1",
       },
       {
         url: "https://antiparti.cl/img/Sirena/Qorky.gif",
-        contentUrl: "https://archive.org/embed/SIRENA-Suicide_Note_0.1_by_Contaminated_Carcass",
+        contentUrl: "https://archive.org/embed/SIRENA-Suicide_Note_0.1_by_Contaminated_Carcass&autoplay=1",
       },
       {
         url: "https://antiparti.cl/img/Sirena/shifishu.gif",
-        contentUrl: "https://archive.org/embed/SIRENA-I_Dunno_by_Deatxwish",
+        contentUrl: "https://archive.org/embed/SIRENA-I_Dunno_by_Deatxwish&autoplay=1",
       },
       {
         url: "https://antiparti.cl/img/Sirena/Sophi.gif",
-        contentUrl: "https://archive.org/embed/SIRENA-JVPURETIBET_by_Davel",
+        contentUrl: "https://archive.org/embed/SIRENA-JVPURETIBET_by_Davel&autoplay=1",
       },
       {
         url: "https://antiparti.cl/img/Sirena/spiny-puppy.gif",
         contentUrl:
-          "https://archive.org/embed/SIRENA-Lifelike_by_Ioana_and_Pablo",
+          "https://archive.org/embed/SIRENA-Lifelike_by_Ioana_and_Pablo&autoplay=1",
       },
       {
         url: "https://antiparti.cl/img/Sirena/tardy.gif",
-        contentUrl: "https://archive.org/embed/SIRENA-PHASE_by_Davel",
+        contentUrl: "https://archive.org/embed/SIRENA-PHASE_by_Davel&autoplay=1",
       },    
       {
         url: "https://antiparti.cl/img/Sirena/bunbun.gif",
-        contentUrl: "https://archive.org/embed/SIRENA-2020.7.5_by_Hiroshi_Murakami",
+        contentUrl: "https://archive.org/embed/SIRENA-2020.7.5_by_Hiroshi_Murakami&autoplay=1",
       },    
       {
         url: "https://antiparti.cl/img/Sirena/bunbunny.gif",
-        contentUrl: "https://archive.org/embed/SIRENA-Equestrian_Teardrop_Power_by_Deatxwish",
+        contentUrl: "https://archive.org/embed/SIRENA-Equestrian_Teardrop_Power_by_Deatxwish&autoplay=1",
       }, 
       {
         url: "https://antiparti.cl/img/Sirena/vluup.gif",
-        contentUrl: "https://archive.org/embed/SIRENA-Kinga_Toth_by_Blanche_The_Vidiot",
+        contentUrl: "https://archive.org/embed/SIRENA-Kinga_Toth_by_Blanche_The_Vidiot&autoplay=1",
       },  
       {
         url: "https://antiparti.cl/img/Sirena/uffump.gif",
-        contentUrl: "https://archive.org/embed/SIRENA-Waterworks_by_Flounder_Lee",
+        contentUrl: "https://archive.org/embed/SIRENA-Waterworks_by_Flounder_Lee&autoplay=1",
       },
       {
         url: "https://antiparti.cl/img/Sirena/billu.gif",
@@ -127,11 +127,11 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       {
         url: "https://antiparti.cl/img/Sirena/anii.gif",
-        contentUrl: "https://www.youtube.com/embed/Go2lgkLkyCY?si=Re7GdwsXVwy0VjAi",
+        contentUrl: "https://archive.org/embed/SIRENA-Bystander_by_Liu_Chang&autoplay=1",
       },
       {
         url: "https://antiparti.cl/img/Sirena/aisha.gif",
-        contentUrl: "https://archive.org/embed/SIRENA_Rusalka_SONIC_ALLURE_by_Ania_Urbanski",
+        contentUrl: "https://archive.org/embed/SIRENA_Rusalka_SONIC_ALLURE_by_Ania_Urbanski&autoplay=1",
       },
     ];
   
