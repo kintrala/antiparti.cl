@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const customPopup = document.getElementById('customPopup');
   const gifContainer = document.getElementById("gifContainer");
   const popup = document.getElementById("popup");
   const iframe = document.getElementById("iframe");
@@ -132,22 +131,6 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     ];
 
-    function showCustomPopup() {
-      customPopup.style.display = 'block';
-      setTimeout(hideCustomPopup, 15000);  // Hide after 15 seconds
-  }
-
-  function hideCustomPopup() {
-    customPopup.style.display = 'none';
-}
-
-showCustomPopup();
-window.addEventListener('click', function (event) {
-  if (event.target === customPopup) {
-      hideCustomPopup();
-  }
-});
-});
 
     function lazyLoadImage(image) {
       const img = new Image();
