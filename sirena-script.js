@@ -89,10 +89,6 @@ document.addEventListener("DOMContentLoaded", function () {
         contentUrl: "https://archive.org/embed/SIRENA-I_Dunno_by_Deatxwish&autoplay=1",
       },
       {
-        url: "https://antiparti.cl/img/Sirena/Sophi.gif",
-        contentUrl: "https://archive.org/embed/SIRENA-JVPURETIBET_by_Davel&autoplay=1",
-      },
-      {
         url: "https://antiparti.cl/img/Sirena/spiny-puppy.gif",
         contentUrl:
           "https://archive.org/embed/SIRENA-Lifelike_by_Ioana_and_Pablo&autoplay=1",
