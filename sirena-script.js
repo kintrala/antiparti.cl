@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const customPopup = document.getElementById('customPopup');
   const gifContainer = document.getElementById("gifContainer");
   const popup = document.getElementById("popup");
   const iframe = document.getElementById("iframe");
@@ -130,7 +131,24 @@ document.addEventListener("DOMContentLoaded", function () {
         contentUrl: "https://archive.org/embed/SIRENA_Rusalka_SONIC_ALLURE_by_Ania_Urbanski&autoplay=1",
       },
     ];
-  
+
+    function showCustomPopup() {
+      customPopup.style.display = 'block';
+      setTimeout(hideCustomPopup, 15000);  // Hide after 15 seconds
+  }
+
+  function hideCustomPopup() {
+    customPopup.style.display = 'none';
+}
+
+showCustomPopup();
+window.addEventListener('click', function (event) {
+  if (event.target === customPopup) {
+      hideCustomPopup();
+  }
+});
+});
+
     function lazyLoadImage(image) {
       const img = new Image();
       img.src = image.url;

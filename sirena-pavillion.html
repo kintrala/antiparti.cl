@@ -71,6 +71,18 @@
         text-align: center;
       }
   
+      #customPopup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
     </style>
     <script src="https://player.vimeo.com/api/player.js"></script>
 </head>
@@ -88,6 +100,10 @@
       <iframe id="iframe" frameborder="0" allow="accelerometer; encrypted-media; gyroscope"></iframe>
     </div>
   </div>
+  <div id="customPopup">
+    <p>パビリオンの作品を見守る架空の海の動物たちと触れ合いながら、キュレーション作品を鑑賞することができる。</p>
+    <p>You can view our curated art by interacting with imaginary sea animals that watch over the pavilion's works.
+</div>
   <script src="/sirena-script.js" defer></script>
 </body>
 </html>
