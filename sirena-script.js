@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
         contentUrl: "https://archive.org/embed/SIRENA-Madena_by_Magdi_Mostafa&autoplay=1",
       },
       {
-        url: "https://antiparti.cl/img/Sirena/morphishy.gif",
+        url: "https://antiparti.cl/img/Sirena/octop.gif",
         contentUrl: "https://archive.org/embed/SIRENA-Drinkable_by_Flounder_Lee&autoplay=1",
       },
       {
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
         contentUrl: "https://archive.org/embed/SIRENA-PHASE_by_Davel&autoplay=1",
       },    
       {
-        url: "https://antiparti.cl/img/Sirena/bunbun.gif",
+        url: "https://antiparti.cl/img/Sirena/bishi.gif",
         contentUrl: "https://archive.org/embed/SIRENA-2020.7.5_by_Hiroshi_Murakami&autoplay=1",
       },    
       {
