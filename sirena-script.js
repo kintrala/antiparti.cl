@@ -129,6 +129,10 @@ document.addEventListener("DOMContentLoaded", function () {
         url: "https://antiparti.cl/img/Sirena/aisha.gif",
         contentUrl: "https://archive.org/embed/SIRENA_Rusalka_SONIC_ALLURE_by_Ania_Urbanski&autoplay=1",
       },
+      {
+        url: "https://antiparti.cl/img/Sirena/bunbun.gif",
+        contentUrl: "https://archive.org/details/pray-22-by-ronnie-karfiol",
+      },
     ];
 
 
